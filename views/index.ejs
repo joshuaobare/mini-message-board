@@ -5,7 +5,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>    
-    <p>Welcome to <%= messages %></p>
+    <h1><%= title %></h1>        
+    <% messages.forEach(item => { %>
+      <div>
+        <div><%= item.text %></div>
+        <div><%= item.user %></div>
+        <div><%= item.added %></div>
+      </div>
+    <% });%>
   </body>
 </html>
