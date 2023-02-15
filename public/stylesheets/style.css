@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+.main-part {
+  display: flex;
+  gap: 5px;
+}
